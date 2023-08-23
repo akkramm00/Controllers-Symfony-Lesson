@@ -32,5 +32,36 @@
       Recemment, via PHP 8 , une nouvlle notion est née,le PHP Attribule, que l'on retrouve notamment à partir de la version 5.4 et 6 de Symfony. Cela permet de déclarer de la métadonnée directement compris par PHP, sous forme:
       #[Route('/', name: 'app_pictures_index', methods: ['GET'])] sans avoir besoin d'utiliser les astérisques. Le routing est un sujet à part entière.
     </p>
+
+   <h2> AbstractController</h2> 
+    <p>
+      Symfony propose par defauts d'etnedre le contrôleur avec "AbstractController". Cette yclasse va fournir diverses methods qui permettent de rendre un template., d'effectuer une redirection, de gérer des erreurs et bien d'autre choses encore. Abstractcontroller, sous Symfony 5.4 et PHP¨8, propose ces différentes méthodes:
+
+      * stContainer()
+      * getParameter()
+      * getSubscribedservices()
+      * generateUrl()
+      * forward()
+      * redirect()
+      * redirectToRoute()
+      * json()
+      * file()
+      * addFlash()
+      * isGranted()
+      * denyAccessUnlessGranted()
+      * renderView()
+      * render()
+      * renderForm()
+      * stream()
+      * createAccessDeniedException()
+      * createForm()
+      * createFormBuilder()
+      * getUser()
+      * isCsrfTokenValid()
+      * addLink()
+      
+      
+      
+    </p>
   </body>
 </html>
