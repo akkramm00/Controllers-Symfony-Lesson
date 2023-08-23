@@ -35,9 +35,9 @@
 
    <h2> AbstractController</h2> 
     <p>
-      Symfony propose par defauts d'etnedre le contrôleur avec "AbstractController". Cette yclasse va fournir diverses methods qui permettent de rendre un template., d'effectuer une redirection, de gérer des erreurs et bien d'autre choses encore. Abstractcontroller, sous Symfony 5.4 et PHP¨8, propose ces différentes méthodes:
+      Symfony propose par defauts d'etendre le contrôleur avec "AbstractController". Cette yclasse va fournir diverses methods qui permettent de rendre un template., d'effectuer une redirection, de gérer des erreurs et bien d'autre choses encore. Abstractcontroller, sous Symfony 5.4 et PHP¨8, propose ces différentes méthodes:
 
-      * stContainer()
+      * setContainer()
       * getParameter()
       * getSubscribedservices()
       * generateUrl()
@@ -59,9 +59,28 @@
       * getUser()
       * isCsrfTokenValid()
       * addLink()
+
+    </p>
+
+  <h2>les Services </h2>
+    <p>
+      Les services sont des classes qui vont pouvoir être appelées dans notre code. Ils sont très utiles pour les controlleurs? car cela leur poermet d'ajouter de nombreuses fonctionnalités sans pour autant les surcharger. Certains services sont proposées par Symfony, mais nous pouvons en créer autant que nous avons besoin.
+
+      Pour connaitre tous les services que propose Symfony, on peut taper la commande suivante:
       
+     " $ php bin/console debug:autowiring "
       
-      
+    </p>
+
+    <h2>Création de services</h2>
+    <p>
+      Nous pouvons aussi créer nois propres services .Pouir cela , nous devons créer un fichier qui contiendra le nm "services" par exemple"UserServices"  le même que notre classe. A l'interieur de cette classe , nous pouvons mettre autant de méthode que nous le souhaitons. Apres, grâce à l'injection de dépendances et au namespace? nous pouvons l'utiliser dans notre controller.
+
+      Toutefois, pour être certain que le chargement de service se fasse automatiquement, vérifieons le fichier "servoces.yaml" et assurons-nous d'avboir les deux variables "autwire" et "autoconfigure " à "true" . Ce sont elles qui permettent à Symfony d'instancier nos classe de service automatiquement et d'aller chercher d'autre dépendances.
+
+      Voici comment ce fichier doit etre par defauts sous Symfony 5.4 :
+
+      ==> Voir le fichier "Config/ services.yaml"
     </p>
   </body>
 </html>

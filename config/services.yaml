@@ -1,0 +1,19 @@
+services:
+  # dfault configuration for services in *this* file
+  _defaults:
+      autowire: true #automatically injects dependencies in your services
+      autoconfigure: true #automatically registers your services as commands, event subscibers, etc .
+
+      # makes classes in src/ available to be used as services
+      # this creates a service per class whose id is the fully-qualified class name
+
+  App\:
+      resource: '../src'
+      exclude: 
+          - '../src/Dependency<Injection/'
+          - '../Entity/'
+          - '../Kernel.php'
+
+      #order is important in this file becouse service definitions
+      #always *replace* previous ones; add your own service configuration below
+      #...
