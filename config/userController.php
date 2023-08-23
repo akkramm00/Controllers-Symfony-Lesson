@@ -1,5 +1,5 @@
 <?php
-//  Voici un Controller de base
+
 namespace App\Controller;
 
 use App\Repository\PictureRepository;
