@@ -23,5 +23,14 @@
 
       => Dans le retour , on demande à Symfony d'écrire une répponse http, contenant dans son corps le HTML résultant de la vue "index.html.twig " puis on fait passer l'objet "$AllPictures " que l'on pourra appeler dans Twig sous l'appelation "pictures".
     </p>
+
+    <h2> Les routes</h2>
+
+    <p>
+      Notons egalement que dans notre code , nous avons mmappé une URL avec le controller .Cela s'est efféctué avec l'annotation @Route('/', name: 'app_pictures_index', methods: ["GET"]).
+
+      Recemment, via PHP 8 , une nouvlle notion est née,le PHP Attribule, que l'on retrouve notamment à partir de la version 5.4 et 6 de Symfony. Cela permet de déclarer de la métadonnée directement compris par PHP, sous forme:
+      #[Route('/', name: 'app_pictures_index', methods: ['GET'])] sans avoir besoin d'utiliser les astérisques. Le routing est un sujet à part entière.
+    </p>
   </body>
 </html>
