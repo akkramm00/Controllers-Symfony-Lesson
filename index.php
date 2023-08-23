@@ -82,5 +82,13 @@
 
       ==> Voir le fichier "Config/ services.yaml"
     </p>
+
+    <h2>
+       Les composants HTTPFoundation
+    </h2>
+    <p>
+      Les accés à une application web se font ^par une requête HTTP. Cette requête contient un en-tête et un body. CVes elements contiennent plusieurs informations . 
+      La réponse du serveur renverra  aussi un esyntaxe similaire. Grace aux classes "request et response" de HttpFoundation, il est ppossible de récupérer ces informations dans le controlleur. Pour utiliser ces classes , il faudra procéder de la même manière que pour les services? c'est-à-dire insérer dans les paramètres de la méthode du controller "Request  et response" avec un nom de variable, souvent, nous trouverons "$request" et "$response" (pensons à toujours l'ajouter au namespace utilisé).
+    </p>
   </body>
 </html>
